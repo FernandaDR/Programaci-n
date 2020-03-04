@@ -3,8 +3,8 @@ import random
 MENSAJE_GANADOR = "Lo lograste"
 
 SUMA = 2
-DADO1 = 0
-DADO2 = 0
+DADO1 = 1
+DADO2 = 1
 NUMERO_DESEADO = 12
 while(SUMA != NUMERO_DESEADO): 
     print(SUMA)
