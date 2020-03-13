@@ -1,5 +1,5 @@
 _numeroA = 0
-_numeroB = 0
+_numeroB = 1
 MENSAJE_ENRADA = " Por favor ingrese un digito "
 
 _numeroA = int( input(MENSAJE_ENRADA))
