@@ -6,8 +6,6 @@ class Humano():
         self.estatura = estatura
         self.peso =  peso
         self.genero = genero
-       
-
 
 ser_humano = Humano ("Daniel", 1.77, 85, "hombre")
 ser_humano_2 = Humano ("Santiago", 1.72, 75, "hombre")
