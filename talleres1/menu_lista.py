@@ -14,7 +14,7 @@ MENSAJE_DESC_2 = " Usted ha ingresado correctamente al sistema y tiene 60% de de
 PREGUNTA_PRODUCTOS = " Por favor ingrese el producto que desea llevar : "
 PREGUNTA_PRODUCTOS_2 = " ¿Desea llevar algo más? si->s no->n : "
 MENSAJE_DENEGADO = " Su ingreso ha sido denegado "
-MENSAJE_ELIMINAR = " Por favor ingrese la posición del producto que desea eliminar "
+MENSAJE_ELIMINAR = " Por favor ingrese el producto que desea eliminar "
 MENSAJE_CONFIRMACION_ELIMINAR = """ ¿Está seguro de que desea eliminar un produCto de su lista de compra? 
  si-> s no-> n """
 MENSAJE_ERROR = " Su acción ha sido errada "
@@ -52,13 +52,17 @@ while ( _numeroIngresado != 5):
     elif (_numeroIngresado == 3):
         def mostrar_lista(Lista):
             posicionProducto = 1
+            print ("Su lista de productos \n")
             for producto in Lista:
                 print(posicionProducto,producto)
                 posicionProducto +=1
         mostrar_lista (list_menu)
-    elif ( _numeroIngresado == 4):
-        list_menu.pop (MENSAJE_ELIMINAR)
-        while (respuesta == "s"):
-            respuesta = input(MENSAJE_CONFIRMACION_ELIMINAR)
+    else:
+        _producto = input(MENSAJE_ELIMINAR)
+        for _producto in range(len(list_menu)):
+            if(_producto == list_menu):
+                input(MENSAJE_CONFIRMACION_ELIMINAR)
+                list_menu.pop(_producto) 
+            print(list_menu)                   
         print(MENSAJE_CONTINUAR)
 print("GRACIAS POR SU COMPRA")
