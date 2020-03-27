@@ -104,11 +104,12 @@ listaEdadesIniciales = [1,2,4,8,16,32,64]
 agregar_edad()
 mostrar_lista(MENSAJE_LISTA_HOY, listaEdadesDia)
 sumar_listas(listaEdadesIniciales,listaEdadesDia)
+listaEdadesHospitalCopia = listaEdadesIniciales.copy
 sacar_promedio(listaEdadesIniciales)
-print (MENSAJE_EDAD_MAX,max(listaEdadesIniciales))
-print(MENSAJE_EDAD_MIN,min(listaEdadesIniciales))
-orden_creciente(MENSAJE_LISTA_CRECIENTE, listaEdadesIniciales)
-orden_decreciente(MENSAJE_LISTA_DECRECIENTE, listaEdadesIniciales)
+print (MENSAJE_EDAD_MAX,max(listaEdadesHospitalCopia))
+print(MENSAJE_EDAD_MIN,min(listaEdadesHospitalCopia))
+orden_creciente(MENSAJE_LISTA_CRECIENTE, listaEdadesHospitalCopia)
+orden_decreciente(MENSAJE_LISTA_DECRECIENTE, listaEdadesHospitalCopia)
 ingresar_paciente(MENSAJE_MALA_ENTRADA, listaEdadesIniciales,3,87)
 sacar_paciente(MENSAJE_SALIDA_PACIENTE, listaEdadesIniciales,5)
 
