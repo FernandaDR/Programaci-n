@@ -77,7 +77,7 @@ for _numeroIngresado in range (1,4):
                 return(print("Completo"))
             orden_decreciente(MENSAJE_LISTA_DECRECIENTE,presionPaciente)
             print("Pacientes: ",len(presionPaciente))
-            print(list_menu)                  
+            print(presionPaciente)                  
             print(MENSAJE_CONTINUAR)
         else: 
             print(SALIR)
