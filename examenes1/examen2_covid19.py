@@ -90,17 +90,3 @@ for _numeroIngresado in range (1,4):
 
 
 
-
-
-
-def calcularPresion (lista):
-    contador = 1
-    for peso in range(len(lista)):
-        presion = peso *6
-        print (presion)
-        contador += 1
-
-
-
-pesosPacientesIniciales = [32,64,74,85,98,115,122,127,137,148]
-calcularPresion(pesosPacientesIniciales)
