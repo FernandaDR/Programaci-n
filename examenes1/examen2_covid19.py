@@ -23,10 +23,7 @@ SALIR = "Usted ha salido del programa"
 _pesoNuevo = ""
 _numeroIngresado = ""
 #---------------Variables---------------
-respuesta = ""
-list_menu =[]
-posicionProducto = 1
-NE = "No existe"
+
 NO = "No agragar mas"
 #----------------Código-----------------
 print (MENSAJE_BIENVENIDA)
