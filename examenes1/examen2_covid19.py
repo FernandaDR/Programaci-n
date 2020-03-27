@@ -41,7 +41,7 @@ for _numeroIngresado in range (1,4):
                 for peso in range(len(lista_1)):
                     presion = peso*6
                     lista_2.append(presion)
-                    print (lista_1,lista_2)
+                    print (lista_1[peso],lista_2[peso])
                     posicion += 1
                 return()
             mostrar_dos_listas(pesosPacientesIniciales,presionPaciente, MENSAJE_OPCION_UNO)
