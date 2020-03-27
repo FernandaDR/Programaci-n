@@ -7,7 +7,7 @@ class Humano():
         self.peso =  peso
         self.genero = genero
 
-ser_humano = Humano ("Daniel", 1.77, 85, "hombre")
+ser_humano = Humano ("Daniel", 1.77, 85, "hombre " )
 ser_humano_2 = Humano ("Santiago", 1.72, 75, "hombre")
 ser_humano_3 = Humano("Marcela", 1.67, 58, "mujer")
 print(ser_humano.raza)

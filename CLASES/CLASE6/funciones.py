@@ -5,5 +5,5 @@ marco()
 def saludar(nombre):
     print ("bienvenido", nombre, " a este codigo")
 
-saludar("daniel")
+saludar("jorge")
 saludar(input("ingrese su nombre : "))

@@ -28,28 +28,30 @@ def mostrar_dos_listas ( lista_1, lista_2):
 def bienvenida(): print ("Bienvenido al codigo")
 
 
-#hablar("hola a todos este es mi mensaje")
+hablar("hola a todos este es mi mensaje")
 
-#print(hablar ("hola"))
-#if hablar ("hola a todos") ==  "exitoso":
-#    print ("el mensaje se mostró con exio")
+print(hablar ("hola"))
+if hablar ("hola a todos") ==  "exitoso":
+    print ("el mensaje se mostró con exio")
 
 def ingresar ():
     intentos = 0
     estado = validar_clave(1234, int(input("ingrese la clave : ")))
     intentos += 1
-    while(estado != "clave valida" and intentos<3):
-        estado = validar_clave(1234, int(input("ingrese la clave : ")))
+    while (estado != "clave valida" and intentos<3):
+        estado = validar_clave(1234,int(input("ingrese la clave : ")))
         intentos += 1
+    return estado
 
-#comidas =["carne", "pollo", "huevo", "queso"]
-#mostrar_lista(comidas)
+comidas =["carne", "pollo", "huevo", "queso"]
+mostrar_lista(comidas)
 
 bienvenida()
-if ingresar() == "clave valida":
-    comidas =["carne", "pollo", "huevo", "queso"]
-    precios =[1234, 5678, 9101, 1213]
-    mostrar_lista(comidas)
+
+if ( ingresar() == "clave valida"):     
+    comidas = ["carne","pollo","huevo","queso"]
+    precios = [1234, 5678, 9101, 1213]
+    mostrar_lista (comidas)
     mostrar_dos_listas(comidas,precios)
 else:
     print("lo sentimos usted no ingresó correctamente, saliendo del programa")
