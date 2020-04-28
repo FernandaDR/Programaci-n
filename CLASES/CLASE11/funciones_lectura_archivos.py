@@ -1,5 +1,5 @@
 def leer_archivo (nombre_archivo):
-    archivo_en_memoria = open(nombre_archivo,'r')
+    archivo_en_memoria = open(nombre_archivo,'r', encoding= "UFT-8")
     lineas_archivo = archivo_en_memoria.read().splitlines()
     archivo_en_memoria.close()
     return lineas_archivo
