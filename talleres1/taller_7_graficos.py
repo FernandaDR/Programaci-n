@@ -21,9 +21,6 @@ figure = plt.gcf()
 figure.set_size_inches(12,23)
 plt.savefig("consumo_gas.png")
 plt.close()
-
-
-
 #___________Gráfico de ECG_________________
 ecg =p.read_csv("ecg_taller.csv",encoding='UTF-8',header=0, delimiter=";").to_dict()
 x= list(ecg["muestra"].values())
